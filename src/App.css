@@ -1,7 +1,32 @@
+html, body {
+  background-color: #FFE2FA;
+  font-family: 'Raleway', sans-serif;
+
+}
 .App {
   text-align: center;
 }
 
+header {
+  text-align: right;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.yt-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -9,7 +34,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 0s linear;
   }
 }
 
